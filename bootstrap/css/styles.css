@@ -1,0 +1,16 @@
+:root {
+    --color-moradoM: #650354;
+    --color-azulM: #29008e;
+  }
+
+nav .container a span{
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+
+}
+
+.azul{
+    color: var(--color-azulM); 
+}
+  .morado{
+    color: var(--color-moradoM);
+}
