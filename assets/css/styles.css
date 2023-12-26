@@ -8,9 +8,15 @@ nav .container a span{
 
 }
 
-.azul{
+.azulText{
     color: var(--color-azulM); 
 }
-  .morado{
-    color: var(--color-moradoM);
+.moradoText{
+  color: var(--color-moradoM);
+}
+.moradoFondo{
+  background-color: var(--color-moradoM);
+}
+.azulFondo{
+  background-color: var(--color-azulM);
 }
