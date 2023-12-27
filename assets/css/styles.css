@@ -20,3 +20,15 @@ nav .container a span{
 .azulFondo{
   background-color: var(--color-azulM);
 }
+
+.navbar-nav li.nav-item a.nav-link {
+  color: #ffffff; 
+  text-shadow: 0 0 2px #ffffff; 
+  transition: text-shadow 0.3s; 
+}
+
+.navbar-nav li.nav-item a.nav-link:hover {
+  text-shadow: 0 0 10px #ffffff; 
+  color: var(--color-moradoM); 
+  font-weight: bold;
+}
