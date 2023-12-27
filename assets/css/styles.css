@@ -21,6 +21,8 @@ nav .container a span{
   background-color: var(--color-azulM);
 }
 
+/*NAVBAR*/
+
 .navbar-nav li.nav-item a.nav-link {
   color: #ffffff; 
   text-shadow: 0 0 2px #ffffff; 
@@ -31,4 +33,34 @@ nav .container a span{
   text-shadow: 0 0 10px #ffffff; 
   color: var(--color-moradoM); 
   font-weight: bold;
+}
+
+/*CAROUSEL*/
+.carousel-inner::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.497);
+  z-index: 1;
+}
+.carousel-caption{
+  z-index: 2;
+}
+
+@media only screen and (max-width: 400px) {
+  .carousel-inner{
+    padding-top: 60px;
+  } 
+  .carousel-caption{
+    margin-top: 80px;
+  }
+  .carousel-caption > h2{
+    font-size: 17px;
+  }
+  .carousel-caption p{
+    font-size: 12px;
+  }
 }
