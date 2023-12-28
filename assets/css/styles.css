@@ -36,7 +36,7 @@ nav .container a span{
 }
 
 /*CAROUSEL*/
-.carousel-inner::before{
+#carouselE .carousel-inner::before{
   content: '';
   position: absolute;
   width: 100%;
@@ -102,6 +102,5 @@ nav .container a span{
   .carousel-caption p{
     font-size: 16px;
   }
-  /*CURSOS*/
-  
+  /*CARTAS*/
 }
