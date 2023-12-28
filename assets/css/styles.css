@@ -87,6 +87,93 @@ nav .container a span{
   text-align: justify;
 }
 
+/*CONTACTO*/
+.cotactanos {
+  padding: 40px;
+}
+
+.contactanos h2{
+  font-size: 36px;
+}
+
+.redes-sociales {
+  text-align: center;
+}
+.redes-sociales svg{
+  width: 40px;
+  transition: .3s ease;
+}
+#facebookIcon{
+  fill: #0866ff;
+}
+.redes-sociales #facebookIcon:hover{
+  background-color: #0866ff;
+  fill: white;
+  box-shadow: 0 0 15px #0866ff,
+              0 0 45px #0866ff,
+              0 0 75px #0866ff,
+              0 0 115px #0866ff;
+}
+.redes-sociales a:hover{
+  background-color: white;
+}
+
+#tiktokIcon{
+  fill: #000000;
+}
+
+.redes-sociales #tiktokIcon:hover{
+  background-color: #65c3c9;
+  fill: #e71d4f;
+  box-shadow: 0 0 15px #65c3c9,
+              0 0 45px #65c3c9,
+              0 0 75px #65c3c9,
+              0 0 115px #65c3c9;
+}
+
+#youtubeIcon{
+  fill: #ff0000;
+}
+
+.redes-sociales #youtubeIcon:hover{
+  background-color: #ff0000;
+  fill: white;
+  box-shadow: 0 0 15px #ff0000,
+              0 0 45px #ff0000,
+              0 0 75px #ff0000,
+              0 0 115px #ff0000;
+}
+
+#instagramIcon{
+  fill: #ed4a5f;
+}
+
+.redes-sociales #instagramIcon:hover{
+  background-color: #a231c1;
+  fill: #e84272;
+  box-shadow: 0 0 15px #fec04f,
+              0 0 45px #a231c1,
+              0 0 75px #4d5dcc,
+              0 0 115px #e84272;
+}
+
+.mensaje-whatsapp {
+  background-image: url('../images/Carrusel2.jpg'); /* Reemplaza 'tu-imagen-de-fondo.jpg' con tu imagen */
+  background-size: cover;
+  width: 100%;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3 ease;
+}
+
+.mensaje-whatsapp a{
+  transition: transform 0.3s ease-in-out;
+}
+
+.mensaje-whatsapp a:hover{
+  transform: scale(1.1);
+}
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 400px) {
@@ -113,4 +200,10 @@ nav .container a span{
     text-align: justify;
     padding: 0 12px 0px 12px;
   }
+
+  /*CONTACTO*/
+  .mensaje-whatsapp{
+    height: 300PX;
+  }
+  
 }
