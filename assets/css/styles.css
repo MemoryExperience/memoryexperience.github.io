@@ -58,6 +58,11 @@ nav .container a span{
   position: relative;
   overflow: hidden;
 }
+.contenedorCursos{
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 auto !important;
+}
 .curso img {
   transition: transform 0.5s;
   max-width: 100%; /* Para que las imágenes no se salgan de sus contenedores */
@@ -85,6 +90,11 @@ nav .container a span{
 }
 .descripcionP{
   text-align: justify;
+}
+/*CARDS ESTUDIANTES*/
+#cardCarousel{
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 /*CONTACTO*/
@@ -176,34 +186,126 @@ nav .container a span{
 }
 
 /*MEDIA QUERIES*/
-@media only screen and (max-width: 400px) {
-  .carousel-inner{
-    padding-top: 60px;
-  } 
-  .carousel-caption{
-    margin-top: 80px;
+@media only screen and (max-width: 1768px) {
+  /*CAROUSEL*/
+  .tituloPrincipal{
+    font-size: 45px;
+    padding-bottom: 40px;
   }
-  .carousel-caption > h2{
-    font-size: 19px;
+  .textoMovPrincipal{
+    font-size: 40px;
+    padding-bottom: 30px;
   }
-  .carousel-caption p{
-    font-size: 16px;
+  .lugar{
+    font-size: 30px;
   }
-  /*CARTAS*/
+  .bloque1 a{
+    margin-bottom: 60px !important;
+  }
+  .bloque2 a{
+    margin-bottom: 60px !important;
+  }
+  .bloque3 a{
+    margin-bottom: 60px !important;
+  }
+  .tituloCarrusel{
+    font-size: 45px;
+    padding-bottom: 30px;
+  }
+  .textoMovimiento{
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+  
+  /*NUESTROS CURSOS*/
+  .cursosTitulo{
+    font-size: 45px;
+  }
+  /*CONTACTO*/
+  .mensaje-whatsapp{
+    height: 100%;
+  }
+  .redes-sociales .textoRed{
+    padding-left: 0;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .tituloPrincipal{
+    font-size: 33px;
+  }
   .card img{
     width: 12rem;
     height: 15rem;
     padding-top: 10px;
     overflow: hidden;
   }
+    /*CONTACTO*/
+  .mensaje-whatsapp{
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .carousel-inner{
+    padding-top: 20px;
+  } 
+  .carousel-caption{
+    margin-top: 0px;
+    padding-top: 0;
+  }
+  .tituloPrincipal{
+    font-size: 23px;
+    padding-bottom: 12px;
+  }
+  .carousel-caption .tituloCarrusel{
+    padding-bottom: 25px;
+    font-size: 25px;
+  }
+  .carousel-caption .textoMovimiento{
+    font-size: 23px;
+  }
+  .carousel-caption p{
+    font-size: 16px;
+  }
+  /*CARTAS*/
   .card-text{
     text-align: justify;
     padding: 0 12px 0px 12px;
   }
-
-  /*CONTACTO*/
-  .mensaje-whatsapp{
-    height: 300PX;
+  #cardCarousel{
+    padding-left: 1.5%;
+    padding-right: 1.5%;
   }
-  
 }
+
+@media only screen and (max-width: 400px) {
+  /*CARROUSEL*/
+  .tituloPrincipal{
+    padding-bottom: 20px;
+  }
+  .textoMovPrincipal{
+    padding-bottom: 20px;
+  }
+  .carousel-inner{
+    padding-top: 60px;
+  } 
+  .carousel-caption{
+    margin-top: 80px;
+  }
+  .carousel-caption .tituloCarrusel{
+    padding-bottom: 25px;
+    font-size: 24px;
+  }
+  .carousel-caption > h2{
+    font-size: 19px;
+  }
+  .carousel-caption .textoMovimiento{
+    font-size: 21px;
+  }
+  #cardCarousel{
+    padding-left: 1%;
+  }
+}
+
