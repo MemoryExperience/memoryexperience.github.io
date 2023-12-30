@@ -58,6 +58,7 @@ nav .container a span{
   position: relative;
   overflow: hidden;
 }
+
 .contenedorCursos{
   width: 100%;
   padding: 0 !important;
@@ -65,10 +66,10 @@ nav .container a span{
 }
 .curso img {
   transition: transform 0.5s;
-  max-width: 100%; /* Para que las imágenes no se salgan de sus contenedores */
+  max-width: 100%;
 }
 .curso:hover img {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .curso .descripcion {
   position: absolute;
@@ -105,7 +106,9 @@ nav .container a span{
 .contactanos h2{
   font-size: 36px;
 }
-
+.mensaje-whatsapp{
+  height: 100%;
+}
 .redes-sociales {
   text-align: center;
 }
@@ -186,7 +189,73 @@ nav .container a span{
 }
 
 /*MEDIA QUERIES*/
-@media only screen and (max-width: 1768px) {
+@media only screen and (max-width: 1980px) {
+   /*CAROUSEL*/
+   .bloque1, .bloque2, .bloque3{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+   }
+   .tituloPrincipal{
+    font-size: 55px;
+    padding-bottom: 40px;
+  }
+  .textoMovPrincipal{
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
+  .lugar{
+    font-size: 30px;
+  }
+  .tituloCarrusel{
+    font-size: 45px;
+    padding-bottom: 30px;
+  }
+  .textoMovimiento{
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+  /*NUESTROS CURSOS*/
+  .cursosTitulo{
+    font-size: 40px;
+  }
+  .curso{
+    margin-bottom: 20px;
+  }
+  .curso img{
+    height: 250px;
+  }
+  .descripcionP{
+    font-size: 1rem;
+  }
+  .tituloEstudiantes{
+    font-size: 45px;
+    padding-top: 60px;
+  }
+
+  #cardCarousel{
+    padding-left: 35%;
+    padding-right: 35%;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+  /*CONTACTO*/
+  .contactanos h2{
+    font-size: 3rem;
+  }
+  .redes-sociales > div{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .mensaje-whatsapp a{
+    font-size: 2rem;
+  }
+  footer p{
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
   /*CAROUSEL*/
   .tituloPrincipal{
     font-size: 45px;
@@ -199,15 +268,6 @@ nav .container a span{
   .lugar{
     font-size: 30px;
   }
-  .bloque1 a{
-    margin-bottom: 60px !important;
-  }
-  .bloque2 a{
-    margin-bottom: 60px !important;
-  }
-  .bloque3 a{
-    margin-bottom: 60px !important;
-  }
   .tituloCarrusel{
     font-size: 45px;
     padding-bottom: 30px;
@@ -219,21 +279,70 @@ nav .container a span{
   
   /*NUESTROS CURSOS*/
   .cursosTitulo{
-    font-size: 45px;
+    font-size: 40px;
+  }
+  .curso{
+    margin-bottom: 20px;
+  }
+  .curso img{
+    height: 100px;
+  }
+  .descripcionP{
+    font-size: 0.5rem;
+  }
+  .tituloEstudiantes{
+    font-size: 35px;
+    padding-top: 30px;
   }
   /*CONTACTO*/
-  .mensaje-whatsapp{
-    height: 100%;
-  }
   .redes-sociales .textoRed{
     padding-left: 0;
   }
-
+  /*CONTACTO*/
+  .contactanos h2{
+    font-size: 2rem;
+  }
+  .redes-sociales > div{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .mensaje-whatsapp a{
+    font-size: 1rem;
+  }
+  footer p{
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .tituloPrincipal{
-    font-size: 33px;
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 12px;
+  }
+  .textoMovPrincipal{
+    margin: 0;
+    padding-bottom: 8px;
+    font-size: 24px;
+  }
+  .lugar{
+    font-size: 20px;
+  }
+  .tituloCarrusel{
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 18px;
+  }
+  .textoMovimiento{
+    font-size: 28px;
+    margin: 0;
+    padding-bottom: 12px;
+  }
+  .curso img{
+    height: 300px;
+  }
+  .descripcionP{
+    font-size: 1.5rem;
   }
   .card img{
     width: 12rem;
@@ -241,10 +350,28 @@ nav .container a span{
     padding-top: 10px;
     overflow: hidden;
   }
-    /*CONTACTO*/
-  .mensaje-whatsapp{
-    height: 300px;
+  #cardCarousel{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
+
+    /*CONTACTO*/
+    .redes-sociales .textoRed{
+      padding-left: 0;
+    }
+    .redes-sociales > div{
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    .mensaje-whatsapp{
+      height: 300px;
+    }
+    .mensaje-whatsapp a{
+      font-size: 1rem;
+    }
+    footer p{
+      font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -257,17 +384,34 @@ nav .container a span{
   }
   .tituloPrincipal{
     font-size: 23px;
-    padding-bottom: 12px;
+    margin: 0;
+    padding-bottom: 5px;
+  }
+  .textoMovPrincipal{
+    margin: 0;
+    padding-bottom: 5px;
+  }
+  .lugar{
+    margin: 0;
   }
   .carousel-caption .tituloCarrusel{
-    padding-bottom: 25px;
     font-size: 25px;
+    margin: 0;
+    padding-bottom: 12px;
   }
   .carousel-caption .textoMovimiento{
     font-size: 23px;
+    margin: 0;
+    padding-bottom: 5px;
   }
   .carousel-caption p{
     font-size: 16px;
+  }
+  .curso img{
+    height: 250px;
+  }
+  .descripcionP{
+    font-size: 0.9rem;
   }
   /*CARTAS*/
   .card-text{
@@ -283,26 +427,26 @@ nav .container a span{
 @media only screen and (max-width: 400px) {
   /*CARROUSEL*/
   .tituloPrincipal{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
   .textoMovPrincipal{
-    padding-bottom: 20px;
+    margin: 0;
+    padding-bottom: 5px;
   }
-  .carousel-inner{
-    padding-top: 60px;
-  } 
-  .carousel-caption{
-    margin-top: 80px;
+  .lugar{
+    margin: 0;
   }
   .carousel-caption .tituloCarrusel{
-    padding-bottom: 25px;
     font-size: 24px;
+    padding-bottom: 5px;
   }
   .carousel-caption > h2{
     font-size: 19px;
   }
   .carousel-caption .textoMovimiento{
     font-size: 21px;
+    margin: 0;
+    padding-bottom: 0;
   }
   #cardCarousel{
     padding-left: 1%;
