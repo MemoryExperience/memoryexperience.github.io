@@ -424,6 +424,33 @@ nav .container a span{
   }
 }
 
+/*PÁGINA CURSOS*/
+.seccionCursos{
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.seccionCursos img{
+  width: 100%;
+}
+.seccionCursos p{
+  text-align: justify;
+}
+.seccionCursos h1{
+  text-align: start;
+}
+.border-morado{
+  border: 2px solid var(--color-moradoM) !important;
+}
+.border-azul{
+  border: 2px solid var(--color-azulM) !important;
+}
+.textoMorado{
+  color: var(--color-moradoM) !important;
+}
+.textoAzul{
+  color: var(--color-azulM) !important;
+}
+
 @media only screen and (max-width: 400px) {
   /*CARROUSEL*/
   .tituloPrincipal{

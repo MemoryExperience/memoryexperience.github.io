@@ -1,46 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cursos</title>
-        <meta name="description" content="MemoryX: Desarrolla tu potencial con técnicas de estudio, matemáticas, música y programación.">
-        <link rel="icon" href="assets/images/logo.ico" type="image/x-icon">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/logo.png" alt="Logo" width="30" height="34"
-                            class="d-inline-block align-text-top">
-                        <span class="fw-bold">MemoryX</span>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
-                        aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarS">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Cursos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Artículos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Nosotros</a>
-                            </li>
-                        </ul>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <meta name="description"
+        content="MemoryX: Desarrolla tu potencial con técnicas de estudio, matemáticas, música y programación.">
+    <link rel="icon" href="assets/images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="Logo" width="30" height="34"
+                        class="d-inline-block align-text-top">
+                    <span class="fw-bold">MemoryX</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+                    aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarS">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cursos.html" class="nav-link">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Artículos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container seccionCursos">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="card border-morado h-100">
+                    <img src="assets/images/matematicas.jpg" class="card-img-top img-fluid pt-0"
+                        alt="Curso Matemáticas">
+                    <div class="card-body text-center d-flex flex-column h-100">
+                        <h1 class="h5 card-title textoMorado fw-bold">Matemágicas para Primaria</h1>
+                        <p class="card-text">¡Descubre el fascinante mundo de las matemáticas en nuestro curso para
+                            primaria! Reforzaremos conceptos clave, abordaremos temas esenciales y haremos que aprender
+                            matemáticas sea emocionante y divertido para ti.</p>
+                        <a href="#" class="btn btn-dark">Conocer más sobre el curso</a>
                     </div>
                 </div>
-            </nav>
-        </header>
-    </body>
+            </div>
+            <div class="col">
+                <div class="card border-azul h-100">
+                    <img src="assets/images/tecnicasEstudio.jpg" class="card-img-top pt-0" alt="Curso Matemáticas">
+                    <div class="card-body text-center d-flex flex-column h-100">
+                        <h1 class="h5 card-title textoAzul fw-bold">Curso de Desarrollo Personal y Académico</h1>
+                        <p class="card-text">Descubre el arte de la organización, la productividad eficiente, la
+                            memorización brillante y la creación de hábitos positivos.</p>
+                        <a href="#" class="btn btn-dark">Conocer más sobre el curso</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-morado h-100">
+                    <img src="assets/images/lectura.jpg" class="card-img-top" alt="Curso Matemáticas">
+                    <div class="card-body text-center d-flex flex-column h-100">
+                        <h1 class="h5 card-title textoMorado fw-bold">Lectura Inteligente: Estrategias y Habilidades
+                        </h1>
+                        <p class="card-text">¡Domina el arte de la lectura veloz, comprensión profunda y retención
+                            duradera! al final del taller, habrás conquistado un libro completo.</p>
+                        <a href="#" class="btn btn-dark">Conocer más sobre el curso</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-azul h-100">
+                    <img src="assets/images/expo.jpg" class="card-img-top pt-0" alt="Curso Matemáticas">
+                    <div class="card-body text-center d-flex flex-column h-100">
+                        <h1 class="h5 card-title textoAzul fw-bold">Presentaciones Impactantes: Taller Avanzado</h1>
+                        <p class="card-text">Descubre el arte de la presentación profesional: Conviértete en un experto
+                            en exposiciones y crea diapositivas impactantes que atraigan a tu público. ¡Gana confianza
+                            en cada presentación!</p>
+                        <a href="#" class="btn btn-dark">Conocer más sobre el curso</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-morado h-100">
+                    <img src="assets/images/memoria.jpg" class="card-img-top pt-0" alt="Curso Matemáticas">
+                    <div class="card-body text-center d-flex flex-column h-100">
+                        <h1 class="h5 card-title textoMorado fw-bold">Taller de Supermemoria: Memoriza sin Esfuerzo</h1>
+                        <p class="card-text">¡Domina la magia de la memorización! Aprende las técnicas más efectivas
+                            para impulsar tu éxito personal y académico, ¡Sin mucho esfuerzo!</p>
+                        <a href="#" class="btn btn-dark">Conocer más sobre el curso</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-azul h-100">
+                    <img src="assets/images/programacion.jpg" class="card-img-top pt-0" alt="Curso Matemáticas">
+                    <div class="card-body text-center d-flex flex-column h-100">
+                        <h1 class="h5 card-title textoAzul fw-bold">ScratchLandia: Donde la Diversión es Programar</h1>
+                        <p class="card-text">¡Desarrolla tu Lógica de Programación con Scratch y aprende a crear
+                            Videojuegos Divertidos!</p>
+                        <a href="#" class="btn btn-dark">Conocer más sobre el curso</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-morado h-100">
+                    <img src="assets/images/digitalizacion.jpg" class="card-img-top pt-0" alt="Curso Matemáticas">
+                    <div class="card-body text-center d-flex flex-column h-100">
+                        <h1 class="h5 card-title textoMorado fw-bold">Digitaliza Tu Mundo</h1>
+                        <p class="card-text">Curso para aprender a utilizar Word, PowerPoint y Excel en un viaje
+                            divertido y práctico. ¡Descubre el poder de la informática para transformar tu vida personal
+                            y profesional!</p>
+                        <a href="#" class="btn btn-dark">Conocer más sobre el curso</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-azul h-100">
+                    <img src="assets/images/musicMemoryX.png" class="card-img-top pt-0" alt="Curso Matemáticas">
+                    <div class="card-body text-center d-flex flex-column h-100">
+                        <h1 class="h5 card-title textoAzul fw-bold">Descubre Tu Ritmo: Órgano eléctrico, Guitarra y
+                            Flauta</h1>
+                        <p class="card-text">Embárcate en un viaje musical único con nuestro grupo de talleres "Sonidos
+                            Mágicos". Aprende a tocar piano, guitarra y flauta mientras exploras la belleza de la
+                            música. Si estás iniciando en la música, estos talleres te sumergirán en la magia de la
+                            creación sonora.</p>
+                        <a href="#" class="btn btn-dark">Conocer más sobre el curso</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright col-12 text-center p-3 pt-4 text-light azulFondo fw-bold"><p>&copy; 2023 MemoryX</p></div>
+    </footer>
+    <script type="text/javascript" src="assets/js/jquery-3.7.1.slim.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  
+    <script src="assets/js/main.js"></script>
+</body>
 
 </html>
