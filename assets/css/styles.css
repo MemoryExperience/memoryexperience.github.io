@@ -451,6 +451,25 @@ nav .container a span{
   color: var(--color-azulM) !important;
 }
 
+/*PÁGINA NOSOTROS*/
+.principalNosotros{
+  margin-top: 62px;
+  width: 100%;
+}
+.textoInicial{
+  background-color: var(--color-moradoM);
+  width: 100%;
+  margin: 0 !important;
+  padding: 0;
+}
+.principalNosotros h2{
+  color: white;
+  font-weight: bold;
+}
+.principalNosotros p{
+  text-align: justify;
+}
+
 @media only screen and (max-width: 400px) {
   /*CARROUSEL*/
   .tituloPrincipal{
